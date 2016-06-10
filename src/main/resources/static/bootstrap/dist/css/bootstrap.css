@@ -280,20 +280,6 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.footer{
-	position:fixed;
-	bottom: 0;
-	width: 100%;
-	background-color: #e3e3e3;
-}
-
-.footer .wrapper{
-    text-align: center;
-    padding: 10px 0;
-    color: #393034;
-    font-size: 14px;
-}
-
 .glyphicon-asterisk:before {
   content: "\002a";
 }
