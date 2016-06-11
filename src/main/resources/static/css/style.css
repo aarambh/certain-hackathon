@@ -88,7 +88,7 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 10px;background-color: #c5c1ff;margin-left: 115px;
 }
 .col1of2 {
 	width: 50%;
@@ -120,6 +120,7 @@ h3, h4 {
 .timezones{
 	float: right;
 	margin-top: -30px;
+	margin-right: 140px;
 }
 .form-group .center-block {
 	display: block;
@@ -147,6 +148,13 @@ h3, h4 {
 .cal{
 	margin-left: 105px;
 }
-.required {
-	color: red;
+.period {
+	position: relative;
+	padding: 0px 30px 20px 30px;
+	max-width: 860px;
+	box-sizing: border-box;
+}
+.header{
+	style="color: #393034;
+	font-size: 20px;"
 }

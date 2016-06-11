@@ -1,0 +1,25 @@
+{
+"_id" : "6075f766-090c-4798-bea7-c78cb386e967",
+"eventName" : "Hackathon Demo Day",
+"eventCode" : "HDD1234",
+"location" : "Certain Cafe",
+"questions" : [
+				{
+				"title" : "What kind of product you would like to join?",
+				"label" : "What kind of product you would like to join?",
+				"type" : "text"
+				},
+				
+				{
+                "title" : "Would you intreseted in meetings?",
+				"label" : "Would you intreseted in meetings?",
+				"type" : "text"
+				},
+				
+				{
+				"title" : "Comments?",
+				"label" : "Comments?",
+				"type" : "text"
+				}
+			]
+}

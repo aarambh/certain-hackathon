@@ -1,22 +1,29 @@
 function AttendeeCtrl($scope){
 	$scope.formSteps = [
-						{"stepNumber" : 0, "title" : "Questions", "view" : "question"}, 
-						{"stepNumber" : 1, "title" : "Calendar", "view" : "calendar"}, 
-						{"stepNumber" : 2, "title" : "Details", "view" : "detail"},
-						{"stepNumber" : 3, "title" : "Confirmation", "view" : "confirmation"}
+						{"stepNumber" : 1, "title" : "Questions", "view" : "question"}, 
+						{"stepNumber" : 2, "title" : "Calendar", "view" : "calendar"}, 
+						{"stepNumber" : 3, "title" : "Details", "view" : "detail"},
+						{"stepNumber" : 4, "title" : "Confirmation", "view" : "confirmation"}
 						];
 	
-	$scope.currentStep = $scope.formSteps[0];
+	$scope.currentStep = 1;
+	$scope.module = $scope.formSteps[0];
 	
 	$scope.nextStep = function(){
-		$scope.currentStep.stepNumber++;
-		$scope.currentStep = $scope.formSteps[$scope.currentStep.stepNumber];
-		
+		$scope.currentStep++;
+		$scope.moveToStep($scope.currentStep);
+	}
+	
+	$scope.moveToStep = function(index){
+		for ( var i = 0; i < $scope.formSteps.length; i++) {
+			if(index == $scope.formSteps[i].stepNumber)
+				$scope.module = $scope.formSteps[i]; 
+		}
 	}
 	
 	$scope.previousStep = function(){
-		$scope.currentStep.stepNumber--;
-		$scope.currentStep = $scope.formSteps[$scope.currentStep.stepNumber];
+		$scope.currentStep--;
+		$scope.moveToStep($scope.currentStep);
 	}
 	
 }
