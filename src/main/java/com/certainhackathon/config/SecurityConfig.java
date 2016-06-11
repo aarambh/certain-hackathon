@@ -42,7 +42,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http
+		/**
+		 * disabling the authentiaction for now
+		 */
+		http.httpBasic().disable()
+			.csrf().disable().authorizeRequests()
+			.antMatchers("/**/**").permitAll();
+		/*http
 			.httpBasic().disable()
 			//.csrf().disable()
 			.authorizeRequests()
@@ -61,7 +67,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.exceptionHandling().authenticationEntryPoint(new SecutiryAuthenticationEntryPoint())
 			.and()
 			.addFilterAfter(new CsrfHeaderFilter(), CsrfFilter.class)
-			.csrf().csrfTokenRepository(csrfTokenRepository());
+			.csrf().csrfTokenRepository(csrfTokenRepository());*/
 	}
 	
 	@Override

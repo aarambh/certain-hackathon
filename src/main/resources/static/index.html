@@ -29,11 +29,13 @@
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bootstrap/ui-bootstrap-tpls-1.3.2.min.js"></script>
 <script src="/angular/toaster.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/js/module.js"></script>
+<script src="/js/controllers/AttendeeCtrl.js"></script>
+<script src="/js/services/AttendeeService.js"></script>
+<script src="/js/services/ResponseInterceptor.js"></script>
 
 
-<body ng-app="meetballs">
+<body>
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -42,103 +44,11 @@
 				<a style="margin-left: auto; margin-right: auto; float: none;"
 					class="navbar-brand" href="">MeetBalls</a>
 			</h2>
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<!-- <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div> -->
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                	<li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#">Event Types</a>
-                    </li>
-                	<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-			<ul id="login-dp" class="dropdown-menu">
-				<li>
-					 <div style="width:350px;">
-					 		<h4 align="center">Login</h4>
-							<div class="col-md-12">
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-										</div>
-										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-										</div>
-								 </form>
-								</div>
-							 </div>
-							</li>
-						</ul>
-			        </li>
-                </ul>
-            </div> -->
-			<!-- /.navbar-collapse -->
 		</div>
-		<!-- /.container -->
 	</nav>
 
-	<!-- Half Page Image Background Carousel Header -->
-
-	<!-- Page Content -->
-	<div class="container" style="margin-top: 100px;" ng-controller="DemoCtrl">
-	
-	    <div class="form-group">
-	      <span class="q-label">What kind of product you would like to join?</span> <span class="required">*</span>
-	      <input type="text" class="form-control" ng-model="myInterval">
-	    </div><br>
-	    <div class="form-group">
-	      <span class="q-label">Would you intreseted in meetings?</span> <span class="required">*</span>	      
-	      
-	       <input type="text" class="form-control" ng-model="myInterval">
-	    </div><br>
-	    <div class="form-group">
-	      <span class="q-label">Comments?</span> <span class="required">*</span> <input type="text" class="form-control" ng-model="myInterval">
-	    </div>
-		    <button type="button" id="myButton"  class="btn btn-primary center-block" >
-			  Save
-			</button>
-		<!-- <hr>
-			<div class="row">
-				<h3 align="center">Event Details to be added over here</h3>
-			</div>
-		<hr> -->
-		<!-- <div class="row">
-	            <div class="col-lg-12">
-	                <h1>Further code for calendar to be added here</h1>
-	            </div>
-	        </div> -->
-		<!-- <div class="col-lg-offset-4 wrapper narrow">
-			<div class="text-center mbm"></div>
-			<div class="row mbm">
-				<h4 align="center">Select a Time</h4>
-			</div>
-			<div class="js-spot-list mbl">
-				<div class="js-am-spot-list">
-					<ul class="spots">
-						<li class="spot available collapsed">
-							<button ng-show="demo" ng-click="demo = !demo" class="time-button js-select animate-show">09:00am</button>
-							<button ng-hide="demo" ng-click="demo = !demo" class="time-button-inverse js-select animate-show">Confirm</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-		</div>-->
+	<div class="container" style="margin-top: 100px;" ng-view>
+		
 	</div>
 		<footer>
 			<div class="footer">
@@ -148,12 +58,5 @@
 			</div>
 		</footer>
 </body>
-
-<script type="text/javascript">
-	angular.module('meetballs', ['ngAnimate'])
-	.controller('DemoCtrl', function($scope){
-			$scope.demo = true;
-	})
-</script>
 
 </html>
