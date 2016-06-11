@@ -83,7 +83,70 @@
     width: 120px;
 }
 
+.marker {
+	float: left;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.col1of2 {
+	width: 50%;
+}
 
+h3, h4 {
+	font-size: 16px;
+	line-height: 1.3em;
+	font-weight: bold;
+	color: #817A7A;
+}
+
+.timezone-area {
+	position: relative;
+	float: right;
+}
+.timezone-area .muted {
+	position: relative;
+	top: 1px;
+	margin-right: 3px;
+}
+.timezone-area .timezone {
+	display: inline-block;
+}
+.col1of2, .col2of4, .col3of6 {
+	width: 50%;
+}
+
+.timezones{
+	float: right;
+	margin-top: -30px;
+}
+.form-group .center-block {
+	display: block;
+	margin-right: auto;
+	margin-left: 400px;
+}
+.day {
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	border: 4px solid #00A2FF;
+	border-radius: 50%;
+}
+.full {	
+	font-size: 14px;
+	margin-left: 10px;
+	color: #c9c9c9;
+}
+.short{	
+	text-align: center;
+	margin-left: 18px;
+}
+.cal{
+	margin-left: 105px;
+}
 .required {
 	color: red;
 }
