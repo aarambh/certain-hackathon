@@ -1,25 +1,146 @@
-{
-"_id" : "6075f766-090c-4798-bea7-c78cb386e967",
-"eventName" : "Hackathon Demo Day",
-"eventCode" : "HDD1234",
-"location" : "Certain Cafe",
-"questions" : [
-				{
-				"title" : "What kind of product you would like to join?",
-				"label" : "What kind of product you would like to join?",
-				"type" : "text"
-				},
-				
-				{
-                "title" : "Would you intreseted in meetings?",
-				"label" : "Would you intreseted in meetings?",
-				"type" : "text"
-				},
-				
-				{
-				"title" : "Comments?",
-				"label" : "Comments?",
-				"type" : "text"
-				}
-			]
-}
+[{
+		"_id": "6075f766-090c-4798-bea7-c78cb386e967",
+		"eventName": "Hackathon Demo Day",
+		"eventCode": "HDD1234",
+		"location": "Certain Cafe",
+		"createdBy": "Aarambh Mishra",
+		"availableDates": [{
+			"day": "Monday",
+			"date": "June 13"
+		}, {
+			"day": "Tuesday",
+			"date": "June 14"
+		}, {
+			"day": "Wednesday",
+			"date": "June 15"
+		}, {
+			"day": "Thursday",
+			"date": "June 16"
+		}, {
+			"day": "Friday",
+			"date": "June 17"
+		}, {
+			"day": "Saturday",
+			"date": "June 18"
+		}, {
+			"day": "Sunday",
+			"date": "June 19"
+		}],
+		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
+
+		"questions": [{
+				"title": "What kind of product you would like to join? *",
+				"label": "What kind of product you would like to join?",
+				"type": "text"
+			},
+
+			{
+				"title": "Would you intreseted in meetings? *",
+				"label": "Would you intreseted in meetings?",
+				"type": "text"
+			},
+
+			{
+				"title": "Comments? *",
+				"label": "Comments?",
+				"type": "text"
+			}]
+	},  
+    {
+		"_id": "6075f766-090c-4798-bea7-c95bb386e967",
+		"eventName": "Certain: Build an Idea",
+		"eventCode": "CBI1234",
+		"location": "Certain Conference Room",
+		"createdBy": "Madhuri Galav",
+		"availableDates": [{
+			"day": "Monday",
+			"date": "June 13"
+		}, {
+			"day": "Tuesday",
+			"date": "June 14"
+		}, {
+			"day": "Wednesday",
+			"date": "June 15"
+		}, {
+			"day": "Thursday",
+			"date": "June 16"
+		}, {
+			"day": "Friday",
+			"date": "June 17"
+		}, {
+			"day": "Saturday",
+			"date": "June 18"
+		}, {
+			"day": "Sunday",
+			"date": "June 19"
+		}],
+		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
+
+		"questions": [{
+				"title": "What kind of Seminar you would like to join? *",
+				"label": "What kind of Seminar you would like to join?",
+				"type": "text"
+			},
+
+			{
+				"title": "Have you been before in events like this? *",
+				"label": "Have you been before in events like this?",
+				"type": "text"
+			},
+
+			{
+				"title": "Notes? *",
+				"label": "Notes?",
+				"type": "text"
+			}]
+	},
+
+	{
+		"_id": "6075f766-090c-4798-bea7-c78cb386e967",
+		"eventName": "Certain: Attendee Management Portal Demo",
+		"eventCode": "CAMPD1234",
+		"location": "Certain Lab",
+		"createdBy": "Prashant Gupta",
+		"availableDates": [{
+			"day": "Monday",
+			"date": "June 13"
+		}, {
+			"day": "Tuesday",
+			"date": "June 14"
+		}, {
+			"day": "Wednesday",
+			"date": "June 15"
+		}, {
+			"day": "Thursday",
+			"date": "June 16"
+		}, {
+			"day": "Friday",
+			"date": "June 17"
+		}, {
+			"day": "Saturday",
+			"date": "June 18"
+		}, {
+			"day": "Sunday",
+			"date": "June 19"
+		}],
+		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
+
+		"questions": [{
+				"title": "Where do you belong? *",
+				"label": "Where do you belong??",
+				"type": "text"
+			},
+
+			{
+				"title": "What are you looking for in the event? *",
+				"label": "What are you looking for in the event?",
+				"type": "text"
+			},
+
+			{
+				"title": "Share your thoughts? *",
+				"label": "Share your thoughts?",
+				"type": "text"
+			}]
+	}
+]
