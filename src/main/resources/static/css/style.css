@@ -70,7 +70,20 @@
 	font-size: 18px;
 	color: #a8a8a8;
 }
+.action-button {
+    display: inline-block;
+    border: 1px solid #108dff;
+    background: transparent;
+    font-size: 16px;
+    line-height: 42px;
+    padding: 0px 15px 0 15px;
+    color: #108dff;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 120px;
+}
+
 
 .required {
-	color: #00c19b;
+	color: red;
 }
