@@ -1,9 +1,10 @@
 function AttendeeCtrl($scope){
 	$scope.formSteps = [
 						{"stepNumber" : 1, "title" : "Questions", "view" : "question"}, 
-						{"stepNumber" : 2, "title" : "Calendar", "view" : "calendar"}, 
-						{"stepNumber" : 3, "title" : "Details", "view" : "detail"},
-						{"stepNumber" : 4, "title" : "Confirmation", "view" : "confirmation"}
+						{"stepNumber" : 2, "title" : "Calendar", "view" : "calendar"},
+						{"stepNumber" : 3, "title" : "Time", "view" : "time"},
+						{"stepNumber" : 4, "title" : "Details", "view" : "detail"},
+						{"stepNumber" : 5, "title" : "Confirmation", "view" : "confirmation"}
 						];
 	
 	$scope.currentStep = 1;
