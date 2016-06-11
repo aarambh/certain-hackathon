@@ -20,7 +20,7 @@ app.module.run(function($rootScope, $location, $http){
 app.module.config(['$httpProvider', '$routeProvider', function($httpProvider, $routeProvider) {
     $routeProvider
         .when('/event/:eventId/attendee',             { controller: AttendeeCtrl, templateUrl: '/views/attendee.html' })
-        .when('/event',             { controller: AttendeeCtrl, templateUrl: '/views/event.html' })
+        .when('/event',             { controller: EventCtrl, templateUrl: '/views/event.html' })
         .otherwise({redirectTo: '/event' });
     
     $httpProvider.interceptors.push('httpInterceptor');

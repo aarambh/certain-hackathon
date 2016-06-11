@@ -29,19 +29,19 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "What kind of product you would like to join? *",
+				"title": "What kind of product you would like to join? ",
 				"label": "What kind of product you would like to join?",
 				"type": "text"
 			},
 
 			{
-				"title": "Would you intreseted in meetings? *",
+				"title": "Would you intreseted in meetings? ",
 				"label": "Would you intreseted in meetings?",
 				"type": "text"
 			},
 
 			{
-				"title": "Comments? *",
+				"title": "Comments? ",
 				"label": "Comments?",
 				"type": "text"
 			}]
@@ -77,19 +77,19 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "What kind of Seminar you would like to join? *",
+				"title": "What kind of Seminar you would like to join? ",
 				"label": "What kind of Seminar you would like to join?",
 				"type": "text"
 			},
 
 			{
-				"title": "Have you been before in events like this? *",
+				"title": "Have you been before in events like this? ",
 				"label": "Have you been before in events like this?",
 				"type": "text"
 			},
 
 			{
-				"title": "Notes? *",
+				"title": "Notes?",
 				"label": "Notes?",
 				"type": "text"
 			}]
@@ -126,19 +126,19 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "Where do you belong? *",
+				"title": "Where do you belong? ",
 				"label": "Where do you belong??",
 				"type": "text"
 			},
 
 			{
-				"title": "What are you looking for in the event? *",
+				"title": "What are you looking for in the event? ",
 				"label": "What are you looking for in the event?",
 				"type": "text"
 			},
 
 			{
-				"title": "Share your thoughts? *",
+				"title": "Share your thoughts? ",
 				"label": "Share your thoughts?",
 				"type": "text"
 			}]

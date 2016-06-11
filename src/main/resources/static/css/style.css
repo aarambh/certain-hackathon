@@ -163,3 +163,10 @@ h3, h4 {
 .required {
 	color: red;
 }
+
+.table tr{
+	height: 70px;
+}
+.table tr th{
+	vertical-align: inherit;
+}
