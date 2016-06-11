@@ -11,17 +11,17 @@ app.module = angular.module(app.name, ['ngRoute', 'services', 'ngAnimate', 'toas
 
 app.module.run(function($rootScope, $location, $http){
 	$rootScope.$location = $location;
-	$rootScope.event = {};
+	$rootScope.events = [];
 	$http.get('/event-mock.json').then(function(data){
-		$rootScope.event = data.data;
-		$location.path('/event/'+$rootScope.event._id+'/attendee');
+		$rootScope.events = data.data;
 	});
 });
 
 app.module.config(['$httpProvider', '$routeProvider', function($httpProvider, $routeProvider) {
     $routeProvider
         .when('/event/:eventId/attendee',             { controller: AttendeeCtrl, templateUrl: '/views/attendee.html' })
-        .otherwise({redirectTo: '/' });
+        .when('/event',             { controller: AttendeeCtrl, templateUrl: '/views/event.html' })
+        .otherwise({redirectTo: '/event' });
     
     $httpProvider.interceptors.push('httpInterceptor');
     
