@@ -4,7 +4,7 @@ function AttendeeCtrl($scope){
 						{"stepNumber" : 2, "title" : "Calendar", "view" : "calendar"},
 						{"stepNumber" : 3, "title" : "Time", "view" : "time"},
 						{"stepNumber" : 4, "title" : "Details", "view" : "detail"},
-						{"stepNumber" : 5, "title" : "Confirmation", "view" : "confirmation"}
+						{"stepNumber" : 5, "title" : "Confirmation", "view" : "confirm"}
 						];
 	
 	$scope.currentStep = 1;
@@ -25,6 +25,12 @@ function AttendeeCtrl($scope){
 	$scope.previousStep = function(){
 		$scope.currentStep--;
 		$scope.moveToStep($scope.currentStep);
+	}
+	
+	
+	$scope.chooseDate = function(date){
+		// TODO write the code choose the date
+		$scope.nextStep();
 	}
 	
 }

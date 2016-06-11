@@ -5,25 +5,25 @@
 		"location": "Certain Cafe",
 		"createdBy": "Aarambh Mishra",
 		"availableDates": [{
-			"day": "Monday",
+			"day": "Mon",
 			"date": "June 13"
 		}, {
-			"day": "Tuesday",
+			"day": "Tue",
 			"date": "June 14"
 		}, {
-			"day": "Wednesday",
+			"day": "Wed",
 			"date": "June 15"
 		}, {
-			"day": "Thursday",
+			"day": "Thu",
 			"date": "June 16"
 		}, {
-			"day": "Friday",
+			"day": "Fri",
 			"date": "June 17"
 		}, {
-			"day": "Saturday",
+			"day": "Sat",
 			"date": "June 18"
 		}, {
-			"day": "Sunday",
+			"day": "Sun",
 			"date": "June 19"
 		}],
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
@@ -53,25 +53,25 @@
 		"location": "Certain Conference Room",
 		"createdBy": "Madhuri Galav",
 		"availableDates": [{
-			"day": "Monday",
+			"day": "Mon",
 			"date": "June 13"
 		}, {
-			"day": "Tuesday",
+			"day": "Tue",
 			"date": "June 14"
 		}, {
-			"day": "Wednesday",
+			"day": "Wed",
 			"date": "June 15"
 		}, {
-			"day": "Thursday",
+			"day": "Thu",
 			"date": "June 16"
 		}, {
-			"day": "Friday",
+			"day": "Fri",
 			"date": "June 17"
 		}, {
-			"day": "Saturday",
+			"day": "Sat",
 			"date": "June 18"
 		}, {
-			"day": "Sunday",
+			"day": "Sun",
 			"date": "June 19"
 		}],
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
@@ -102,25 +102,25 @@
 		"location": "Certain Lab",
 		"createdBy": "Prashant Gupta",
 		"availableDates": [{
-			"day": "Monday",
+			"day": "Mon",
 			"date": "June 13"
 		}, {
-			"day": "Tuesday",
+			"day": "Tue",
 			"date": "June 14"
 		}, {
-			"day": "Wednesday",
+			"day": "Wed",
 			"date": "June 15"
 		}, {
-			"day": "Thursday",
+			"day": "Thu",
 			"date": "June 16"
 		}, {
-			"day": "Friday",
+			"day": "Fri",
 			"date": "June 17"
 		}, {
-			"day": "Saturday",
+			"day": "Sat",
 			"date": "June 18"
 		}, {
-			"day": "Sunday",
+			"day": "Sun",
 			"date": "June 19"
 		}],
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],

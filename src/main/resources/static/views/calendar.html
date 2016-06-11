@@ -12,58 +12,10 @@
 	<span class="center-block"><h3>Select a Day</h3></span>
 </div>
 <div class="col-sm-12 cal">
-	<div class="day">
-		<div ng-click="nextStep()">
-			<strong class="short">Sat</strong> <strong class="full">Jun
-				11</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Sun</strong> <strong class="full">Jun
-				12</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Mon</strong> <strong class="full">Jun
-				13</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Tue</strong> <strong class="full">Jun
-				14</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Wed</strong> <strong class="full">Jun
-				15</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Thu</strong> <strong class="full">Jun
-				16</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Fri</strong> <strong class="full">Jun
-				17</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Sat</strong> <strong class="full">Jun
-				18</strong>
-		</div>
-	</div>
-	<div class="day">
-		<div>
-			<strong class="short">Sun</strong> <strong class="full">Jun
-				19</strong>
+	
+	<div class="day" ng-repeat="date in event.availableDates">
+		<div ng-click="chooseDate(date)">
+			<strong class="short">{{date.day}}</strong> <strong class="full">{{date.date}}</strong>
 		</div>
 	</div>
 </div>

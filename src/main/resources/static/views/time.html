@@ -9,11 +9,11 @@
 	<div class="js-spot-list mbl">
 		<div class="js-am-spot-list">
 			<ul class="spots">
-				<li class="spot available collapsed" ng-repeat="">
-					<button ng-show="demo" ng-click="demo = !demo"
-						class="time-button js-select animate-show">09:00am</button>
-					<button ng-hide="demo" ng-click="demo = !demo"
-						class="time-button-inverse js-select animate-show">Confirm</button>
+				<li class="spot available collapsed" ng-repeat="slot in event.availableTimeSlots">
+					<button ng-show="!demo" ng-click="demo = !demo"
+						class="time-button js-select animate-show">{{slot}}</button>
+					<button ng-show="demo"
+						class="time-button-inverse js-select animate-show" ng-click="nextStep()">Confirm</button>
 				</li>
 			</ul>
 		</div>
