@@ -1,5 +1,8 @@
 package com.certainhackathon.common.services;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import com.certainhackathon.common.exceptions.NotFoundException;
 import com.certainhackathon.common.model.BaseModel;
 import com.certainhackathon.common.repositories.AbstractRepository;
@@ -38,6 +41,11 @@ public abstract class AbstractServiceImpl<T extends BaseModel> implements Abstra
 		if (entity != null) {
 			getRepository().delete(id);
 		}
+	}
+	
+	@Override
+	public Page<T> findByPage(Pageable pageable) {
+		return getRepository().findAll(pageable);
 	}
 	
 }
