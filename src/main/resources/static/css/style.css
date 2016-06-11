@@ -63,3 +63,14 @@
     text-align: center;
     margin-bottom: 10px;
 }
+.q-label {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #a8a8a8;
+}
+
+.required {
+	color: #00c19b;
+}
