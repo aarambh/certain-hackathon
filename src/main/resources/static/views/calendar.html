@@ -13,9 +13,11 @@
 </div>
 <div class="col-sm-12 cal">
 	
-	<div class="day" ng-repeat="date in event.availableDates">
-		<div ng-click="chooseDate(date)">
+	<span class="glyphicon glyphicon-triangle-left nav-icon"></span>
+	<div class="day" ng-repeat="date in event.availableDates" ng-click="chooseDate(date)">
+		<div>
 			<strong class="short">{{date.day}}</strong> <strong class="full">{{date.date}}</strong>
 		</div>
 	</div>
+	<span class="glyphicon glyphicon-triangle-right nav-icon"></span>
 </div>

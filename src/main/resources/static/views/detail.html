@@ -21,13 +21,24 @@
 		Pacific Time
 	</div>
 </div>
+<form name="detailForm" novalidate>
 <div class="form-group col-sm-6">
-
 	<h4>Enter Details</h4>
 	<hr>
-	<label>First Name</label> <input type="text" class="form-control">
-	<label>Last Name</label> <input type="text" class="form-control">
-	<label>Email Address</label> <input style="margin-bottom: 20px;" type="text" class="form-control">
-	<button type="button" ng-click="nextStep()" style="display: block; !important" class="action-button">
-	Save</button>
+	<h5 class="required-clr">First Name*</h5>
+	<input type="text" name="firstname" ng-model="detail.firstname" required="required" class="form-control">
+	<span class="required" ng-show="detailForm.firstname.$error.required">Firstname is required.</span>
+	
+	<h5 class="required-clr">Last Name*</h5>
+	<input type="text" required="required" ng-model="detail.lastname" class="form-control" name="lastname">
+	<span class="required" ng-show="detailForm.lastname.$error.required">Lastname is required.</span>
+	
+	<h5 class="required-clr">Email Address*</h5>
+	<input type="email" required="required" ng-model="detail.email" name="email" class="form-control">
+	<span class="required" ng-show="detailForm.email.$error.required">Email is required.</span>
+	<span class="required" ng-show="detailForm.email.$error.email">Invalid email address.</span>
+	
+	<button type="submit" ng-disabled="detailForm.$invalid" ng-click="nextStep()" style="display: block; margin-top: 20px;"
+		class="action-button">Save</button>
 </div>
+</form>

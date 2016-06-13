@@ -1,8 +1,13 @@
 
+<form name="questionForm" novalidate>
 <div class="form-group" ng-repeat="question in event.questions">
-	<span>{{question.title}}</span> <span class="required">*</span> <input type="text"
-		class="form-control" ng-model="question.answer">
+	<ng-form name="innerForm">
+		<span>{{question.title}}</span> <span class="required">*</span> <input type="text" name="question"
+			class="form-control" required="required" ng-model="question.answer">
+		<span class="required" ng-show="innerForm.question.$error.required">Please answer this question.</span>
+	</ng-form>
 </div>
 <br>
-<button type="button" ng-click="nextStep()" style="display: block; !important" class="center-block action-button">
+<button type="submit" ng-disabled="questionForm.$invalid" ng-click="nextStep()"  style="display: block; !important" class="center-block action-button">
 	Save</button>
+</form>
