@@ -63,13 +63,13 @@ public class Attendee extends BaseModel implements Serializable {
 		this.status = status;
 	}
 
-	public void setId(ObjectId id) {
+	public void setId(String id) {
 		this._id = id;
 	}
 
 	@Override
 	@Id
-	public ObjectId getId() {
+	public String getId() {
 		return _id;
 	}
 

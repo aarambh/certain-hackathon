@@ -1,5 +1,7 @@
 package com.certainhackathon.event.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +25,12 @@ public class EventServiceImpl extends AbstractServiceImpl<Event> implements
 	@Override
 	public AbstractRepository<Event> getRepository() {
 		return eventRepository;
+	}
+
+	@Override
+	public List<Event> findAll() {
+		List<Event> events = eventRepository.findAll();
+		return events;
 	}
 
 }

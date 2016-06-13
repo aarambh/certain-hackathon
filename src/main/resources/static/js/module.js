@@ -12,9 +12,6 @@ app.module = angular.module(app.name, ['ngRoute', 'services', 'ngAnimate', 'toas
 app.module.run(function($rootScope, $location, $http){
 	$rootScope.$location = $location;
 	$rootScope.events = [];
-	$http.get('/event-mock.json').then(function(data){
-		$rootScope.events = data.data;
-	});
 });
 
 app.module.config(['$httpProvider', '$routeProvider', function($httpProvider, $routeProvider) {

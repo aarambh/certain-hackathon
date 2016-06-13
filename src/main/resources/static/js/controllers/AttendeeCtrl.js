@@ -1,4 +1,10 @@
-function AttendeeCtrl($scope){
+function AttendeeCtrl($scope, $http, $routeParams){
+	$scope.event = {};
+	
+	$http.get('/event/'+$routeParams.eventId).then(function(data){
+		$scope.event= data.data;
+	})
+	
 	$scope.formSteps = [
 						{"stepNumber" : 1, "title" : "Questions", "view" : "question"}, 
 						{"stepNumber" : 2, "title" : "Calendar", "view" : "calendar"},
