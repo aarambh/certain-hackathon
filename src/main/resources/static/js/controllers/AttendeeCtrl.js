@@ -35,7 +35,12 @@ function AttendeeCtrl($scope, $http, $routeParams){
 	
 	
 	$scope.chooseDate = function(date){
-		// TODO write the code choose the date
+		$scope.chosenDate = date;
+		$scope.nextStep();
+	}
+	
+	$scope.chooseTime = function(time){
+		$scope.chosenTime = time;
 		$scope.nextStep();
 	}
 	

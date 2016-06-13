@@ -6,7 +6,7 @@
 }
 
 .animate-show.ng-hide {
-  opacity: 0;
+  opacity: 0.5;
   width : 0%;
 }
 

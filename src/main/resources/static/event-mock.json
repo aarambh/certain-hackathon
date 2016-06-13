@@ -29,20 +29,20 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "What kind of product you would like to join? ",
-				"label": "What kind of product you would like to join?",
+				"title": "What product are you interested in learning more about? ",
+				"label": "What product are you interested in learning more about?",
 				"type": "text"
 			},
 
 			{
-				"title": "Would you intreseted in meetings? ",
-				"label": "Would you intreseted in meetings?",
+				"title": "Are you a current customer? ",
+				"label": "Are you a current customer?",
 				"type": "text"
 			},
 
 			{
-				"title": "Comments? ",
-				"label": "Comments?",
+				"title": "How did you find out about our exhibit at CPA World? ",
+				"label": "How did you find out about our exhibit at CPA World?",
 				"type": "text"
 			}]
 	},  
@@ -77,20 +77,20 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "What kind of Seminar you would like to join? ",
-				"label": "What kind of Seminar you would like to join?",
+				"title": "What product are you interested in learning more about? ",
+				"label": "What product are you interested in learning more about?",
 				"type": "text"
 			},
 
 			{
-				"title": "Have you been before in events like this? ",
-				"label": "Have you been before in events like this?",
+				"title": "Are you a current customer? ",
+				"label": "Are you a current customer?",
 				"type": "text"
 			},
 
 			{
-				"title": "Notes?",
-				"label": "Notes?",
+				"title": "How did you find out about our exhibit at CPA World? ",
+				"label": "How did you find out about our exhibit at CPA World?",
 				"type": "text"
 			}]
 	},
@@ -126,20 +126,20 @@
 		"availableTimeSlots": ["9 AM", "10 AM", "11 AM", "12 PM", "01 PM", "02 PM", "3 PM", "4 PM", "5 PM"],
 
 		"questions": [{
-				"title": "Where do you belong? ",
-				"label": "Where do you belong??",
+				"title": "What product are you interested in learning more about? ",
+				"label": "What product are you interested in learning more about?",
 				"type": "text"
 			},
 
 			{
-				"title": "What are you looking for in the event? ",
-				"label": "What are you looking for in the event?",
+				"title": "Are you a current customer? ",
+				"label": "Are you a current customer?",
 				"type": "text"
 			},
 
 			{
-				"title": "Share your thoughts? ",
-				"label": "Share your thoughts?",
+				"title": "How did you find out about our exhibit at CPA World? ",
+				"label": "How did you find out about our exhibit at CPA World?",
 				"type": "text"
 			}]
 	}
