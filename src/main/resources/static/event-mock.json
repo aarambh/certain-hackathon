@@ -1,9 +1,9 @@
 [{
 		"_id": "6075f766-090c-4798-bea7-c78cb386e967",
-		"eventName": "Hackathon Demo Day",
+		"eventName": "20 Minute Product Demo with John Smith",
 		"eventCode": "HDD1234",
 		"location": "Certain Cafe",
-		"createdBy": "Aarambh Mishra",
+		"createdBy": "Justin Baer",
 		"availableDates": [{
 			"day": "Mon",
 			"date": "June 13"
