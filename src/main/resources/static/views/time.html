@@ -19,7 +19,7 @@
 		<div class="js-am-spot-list">
 			<ul class="spots">
 				<li class="spot available collapsed" ng-repeat="slot in event.availableTimeSlots">
-					<button style="width:50% !important;" ng-show="demo" ng-click="demo = !demo"
+					<button style="width:50% !important; background-color: black; color: white;" ng-show="demo" ng-click="demo = !demo"
 						class="time-button js-select animate-show">{{slot}}</button>
 					<button ng-show="!demo" ng-click="demo = !demo"
 						class="time-button js-select animate-show">{{slot}}</button>
